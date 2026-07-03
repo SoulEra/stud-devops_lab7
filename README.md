@@ -55,3 +55,9 @@ X Exiting due to HOST_BROWSER: open url failed: [default flask-app 5000 http://1
 root@srv-devops:/home/user/my_homework7# curl http://192.168.49.2:30080
 Hello, World! This page has been visited 1 times.root@srv-devops:/home/user/my_homework7#
 ```
+```
+root@srv-devops:/home/user/my_homework7# minikube service flask-app --url
+http://192.168.49.2:30080
+root@srv-devops:/home/user/my_homework7# curl http://192.168.49.2:30080
+Hello, World! This page has been visited
+```
