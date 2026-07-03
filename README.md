@@ -13,13 +13,13 @@ kubectl apply -f.
 Проверка запущенного 
 ```
 root@srv-devops:/home/user/my_homework7# kubectl get pods
-NAME                         READY   STATUS    RESTARTS   AGE
-flask-app-78c65cc4cd-5tz9h   0/1     Pending   0          31m
-flask-app-78c65cc4cd-kqf2t   0/1     Pending   0          31m
-redis-5df8746b7f-ktxmt       0/1     Pending   0          31m
+NAME                         READY   STATUS    RESTARTS      AGE
+flask-app-857697bd79-2rjhb   0/1     Running   1 (33s ago)   2m4s
+flask-app-857697bd79-jcnv7   0/1     Running   1 (33s ago)   2m4s
+redis-79fc96f7c9-9jv9l       1/1     Running   0             2m4s
 root@srv-devops:/home/user/my_homework7# kubectl get svc
-NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
-flask-service   NodePort    10.100.175.120   <none>        80:30080/TCP   31m
-kubernetes      ClusterIP   10.96.0.1        <none>        443/TCP        36m
-redis-service   ClusterIP   10.101.201.198   <none>        6379/TCP       31m
+NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+flask-service   NodePort    10.99.212.131   <none>        5000:30080/TCP   2m18s
+kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP          3m42s
+redis-service   ClusterIP   10.110.110.34   <none>        6379/TCP         2m18s
 ```
